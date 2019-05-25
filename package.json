@@ -1,0 +1,13 @@
+{
+  "name": "ts-serverside",
+  "version": "1.0.0",
+  "dependencies": {
+    "ts-node": "^8.1.1",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "compile": "tsc src/*.ts --outDir dist && cp src/*.js dist",
+    "dev": "ts-node src/index.ts",
+    "prod": "node dist/index.js"
+  }
+}
